@@ -21,7 +21,8 @@ const Markers = {
     STRICT_ARRAY: 10,
     DATE: 11,
     LONG_STRING: 12,
-    TYPED_OBJECT: 16
+    TYPED_OBJECT: 16,
+    AVMPLUS: 17
   },
   AMF3: {
     UNDEFINED: 0,
@@ -178,6 +179,10 @@ class AMF {
         return this.buffer.readUTFBytes(this.buffer.readUnsignedInt())
       } else if (marker === Markers.AMF0.TYPED_OBJECT) {
         return this.readTypedObject()
+      } else if (marker === Markers.AMF0.AVMPLUS) {
+        this.version = 3
+
+        return this.readData()
       } else {
         throw new TypeError(`AMF.readData => Unknown AMF0 marker: ${marker}`)
       }
