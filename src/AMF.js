@@ -709,7 +709,7 @@ class AMF {
     if (value.pop() === Markers.AMF3.BYTE_ARRAY) {
       return Buffer.from(value)
     } else {
-      throw new RangeError(`AMF3.readByteArray => No ByteArray end marker found`)
+      throw new RangeError(`AMF.readByteArray => No ByteArray end marker found`)
     }
   }
 }

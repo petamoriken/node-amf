@@ -41,7 +41,6 @@ amf.readData() // { id: 1 }
 | Boolean      | ✔     | ✔    | -                                        |
 | String       | ✔     | ✔    | -                                        |
 | Object       | ✔     | ✔    | -                                        |
-| Movieclip    | ✗     | ✗    | Reserved                                 |
 | Null         | ✔     | ✔    | -                                        |
 | Undefined    | ✔     | ✔    | -                                        |
 | Reference    | ✔     | ✔    | -                                        |
@@ -49,8 +48,6 @@ amf.readData() // { id: 1 }
 | Strict array | ✗     | ✔    | AMF0 standards to ECMA array for writing |
 | Date         | ✔     | ✔    | -                                        |
 | Long string  | ✔     | ✔    | -                                        |
-| Unsupported  | ✗     | ✗    | No type in JS                            |
-| Recordset    | ✗     | ✗    | Reserved                                 |
 | XML document | ✗     | ✗    | Who needs XML?                           |
 | Typed object | ✔     | ✔    | -                                        |
 
