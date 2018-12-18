@@ -1,0 +1,31 @@
+{
+  "name": "node-amf",
+  "version": "1.0.0",
+  "description": "AMF0 and AMF3 fully supported in Node.js",
+  "main": "src/AMF.js",
+  "homepage": "https://github.com/Zaseth/node-amf",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zaseth/node-amf"
+  },
+  "bugs": {
+    "url": "https://github.com/Zaseth/node-amf/issues"
+  },
+  "keywords": [
+    "ByteArray",
+    "Actionscript",
+    "Buffer",
+    "Binary",
+    "AMF",
+    "AMF0",
+    "AMF3",
+    "Action",
+    "Message",
+    "Format"
+  ],
+  "dependencies": {
+    "tape": "^4.9.1"
+  },
+  "author": "Zaseth",
+  "license": "MIT"
+}
