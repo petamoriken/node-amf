@@ -659,7 +659,7 @@ class AMF {
 
     // Copy the bytes into the buffer
     for (let i = 0; i < value.length; i++) {
-      this.buffer.writeByte(value[i])
+      this.buffer.writeByte(value.readInt8(i))
     }
 
     // Store the marker position
