@@ -1,12 +1,14 @@
 "use strict"
 
+const DEFAULT_SIZE = 2048
+
 /**
  * ByteArray class
  * @author Zaseth
  */
 class ByteArray {
   constructor() {
-    this.buffer = Buffer.alloc(2048)
+    this.buffer = Buffer.alloc(DEFAULT_SIZE)
     this.writePosition = 0
     this.readPosition = 0
   }
